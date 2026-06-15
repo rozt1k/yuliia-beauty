@@ -217,29 +217,35 @@
         </div>
     </section>
 
-    <section id="contacts" class="bg-powder-base py-24 px-6">
-    <div class="max-w-3xl mx-auto text-center gsap-reveal-up">
-        <h3 class="font-display font-light text-3xl text-charcoal-900 mb-6 uppercase tracking-wide">Зв'язок та Локація</h3>
-        <p class="font-light text-charcoal-800 mb-2">м. Київ, вул. Ялтинська, 15 (Дарниця)</p>
-        <p class="font-medium text-charcoal-900 mb-10 text-lg tracking-widest">063 154 55 50</p>
-        
-        <div class="flex flex-wrap justify-center gap-4 mb-16">
-            <a href="https://instagram.com/lilynails.kiev" target="_blank" class="flex items-center justify-center gap-3 bg-white text-charcoal-800 px-8 py-4 uppercase tracking-widest text-xs transition hover:shadow-md rounded-sm">
-                <i class="fa-brands fa-instagram text-lg"></i> Instagram
-            </a>
-            <a href="https://t.me/lily17061991" target="_blank" class="flex items-center justify-center gap-3 bg-white text-charcoal-800 px-8 py-4 uppercase tracking-widest text-xs transition hover:shadow-md rounded-sm">
-                <i class="fa-brands fa-telegram text-lg"></i> Telegram
-            </a>
-            <a href="viber://chat?number=%2B380631545550" class="flex items-center justify-center gap-3 bg-white text-charcoal-800 px-8 py-4 uppercase tracking-widest text-xs transition hover:shadow-md rounded-sm">
-                <i class="fa-brands fa-viber text-lg"></i> Viber
-            </a>
-        </div>
+    <section id="booking" class="bg-powder-base py-24 px-6">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+            
+            <div class="gsap-reveal-up">
+                <h3 class="font-display font-light text-3xl text-charcoal-900 mb-6 uppercase tracking-wide">Контакти</h3>
+                <p class="mb-4">📍 вул. Ялтинська, 15, Київ</p>
+                <p class="text-xl font-medium mb-8">📞 063 154 55 50</p>
+                
+                <div class="w-full h-64 rounded-sm shadow-inner overflow-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.9156867441075!2d30.656156600000006!3d50.424042500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c51f25107fb1%3A0x7c32dfdffae2ccd8!2z0LLRg9C70LjRhtGPINCv0LvRgtC40L3RgdGM0LrQsCwgMTUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1781529833588!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
 
-        <div class="w-full h-64 bg-white flex items-center justify-center text-charcoal-500 text-sm rounded-sm shadow-inner">
-            *Тут буде карта Google*
+            <div class="bg-white p-8 rounded-sm shadow-sm gsap-reveal-up">
+                <h3 class="font-display text-xl mb-6 uppercase tracking-wide">Онлайн запис</h3>
+                <form action="https://formspree.io/f/xaqzvoao" method="POST" class="space-y-4">
+                    <input type="text" name="name" placeholder="Ваше ім'я" required class="w-full p-3 border border-powder-dark bg-transparent text-sm">
+                    <input type="tel" name="phone" placeholder="Ваш номер телефону" required class="w-full p-3 border border-powder-dark bg-transparent text-sm">
+                    <select name="service" class="w-full p-3 border border-powder-dark bg-transparent text-sm text-charcoal-500">
+                        <option>Манікюр</option>
+                        <option>Педикюр</option>
+                        <option>Брови</option>
+                        <option>Депіляція</option>
+                    </select>
+                    <button type="submit" class="w-full bg-charcoal-800 text-white py-4 uppercase tracking-widest text-xs hover:bg-charcoal-500 transition">Надіслати заявку</button>
+                </form>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <footer class="py-8 text-center text-[10px] tracking-[0.2em] uppercase text-charcoal-500 bg-white border-t border-powder-light">
         &copy; 2026 YULIIA RAPACH. Усі права захищено.
