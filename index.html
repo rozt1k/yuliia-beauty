@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Юлія Рапач | Студія краси</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        powder: { light: '#FCF9F9', base: '#F4EAE8', dark: '#E0CACA' },
+                        charcoal: { 500: '#6B6B6B', 800: '#333333', 900: '#1A1A1A' }
+                    },
+                    fontFamily: {
+                        display: ['Raleway', 'sans-serif'], 
+                        body: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        html.lenis { height: auto; }
+        .lenis.lenis-smooth { scroll-behavior: auto !important; }
+        .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+        .lenis.lenis-stopped { overflow: hidden; }
+        .lenis.lenis-scrolling iframe { pointer-events: none; }
+        
+        /* Приховуємо елементи до завантаження анімації */
+        .gsap-hide { opacity: 0; visibility: hidden; }
+    </style>
+</head>
+<body class="bg-powder-light text-charcoal-800 font-body antialiased overflow-x-hidden">
+
+    <header class="gsap-hero-elem py-6 px-4 md:px-8 text-center bg-white/80 backdrop-blur-md sticky top-0 z-50 transition-all duration-300">
+        <h1 class="font-display font-medium text-xl md:text-2xl tracking-[0.3em] text-charcoal-900 uppercase">Yuliia Rapach</h1>
+        <p class="text-[10px] md:text-xs tracking-[0.4em] text-charcoal-500 mt-2 uppercase">Nails & Beauty</p>
+    </header>
+
+    <section class="max-w-6xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center gap-12 overflow-hidden">
+        <div class="flex-1 text-center md:text-left z-10">
+            <h2 class="font-display font-light text-5xl md:text-6xl text-charcoal-900 mb-8 uppercase">
+                <span class="block gsap-hero-elem">Твій ідеальний</span>
+                <span class="font-medium text-charcoal-800 block mt-2 md:mt-4 gsap-hero-elem">манікюр</span>
+            </h2>
+            <p class="gsap-hero-elem text-base md:text-lg text-charcoal-500 mb-10 font-light max-w-md mx-auto md:mx-0 leading-relaxed">
+                Бездоганна естетика за 1.5 години. Здоров'я ваших нігтів та шкіри від майстра з 10-річним досвідом роботи.
+            </p>
+            <div class="gsap-hero-elem flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="#booking" class="bg-charcoal-800 text-white px-10 py-4 uppercase tracking-[0.15em] text-xs transition hover:bg-charcoal-500 text-center rounded-sm">
+                    Записатися онлайн
+                </a>
+                <a href="#services" class="border border-powder-dark text-charcoal-800 px-10 py-4 uppercase tracking-[0.15em] text-xs transition hover:bg-powder-base text-center rounded-sm">
+                    Послуги
+                </a>
+            </div>
+        </div>
+        
+        <div class="flex-1 w-full max-w-sm relative mx-auto md:mr-0 gsap-photo-wrapper">
+            <div class="absolute top-4 -left-4 w-full h-full bg-powder-base rounded-2xl -z-10"></div>
+            <div class="overflow-hidden rounded-2xl shadow-sm">
+                <img src="5.png" onerror="this.src='https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=800&q=80'" alt="Юлія Рапач - Майстер манікюру" class="gsap-photo-img relative z-10 w-full h-[550px] object-cover scale-110">
+            </div>
+        </div>
+    </section>
+
+    <section class="border-y border-powder-base py-10 mt-8">
+        <div class="max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-powder-base">
+            <div class="py-4 gsap-reveal-up">
+                <span class="block font-display font-medium text-4xl text-charcoal-800 mb-1">10</span>
+                <span class="text-[11px] tracking-[0.2em] text-charcoal-500 uppercase">Років досвіду</span>
+            </div>
+            <div class="py-4 gsap-reveal-up">
+                <span class="block font-display font-medium text-4xl text-charcoal-800 mb-1">100%</span>
+                <span class="text-[11px] tracking-[0.2em] text-charcoal-500 uppercase">Стерильність</span>
+            </div>
+            <div class="py-4 gsap-reveal-up">
+                <span class="block font-display font-medium text-4xl text-charcoal-800 mb-1">1.5h</span>
+                <span class="text-[11px] tracking-[0.2em] text-charcoal-500 uppercase">Таймінг роботи</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16 gsap-reveal-up">
+            <h3 class="font-display font-light text-3xl md:text-4xl text-charcoal-900 mb-3 uppercase tracking-wide">Напрямки</h3>
+            <div class="w-12 h-px bg-powder-dark mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="gsap-card bg-white p-10 hover:shadow-lg transition-shadow duration-300 rounded-sm">
+                <h4 class="font-display text-xl text-charcoal-800 mb-3 uppercase tracking-wide">Манікюр</h4>
+                <p class="font-light text-charcoal-500 text-sm leading-relaxed">Всі техніки чистого манікюру, ідеальні відблиски, укріплення та нарощування.</p>
+            </div>
+            <div class="gsap-card bg-white p-10 hover:shadow-lg transition-shadow duration-300 rounded-sm">
+                <h4 class="font-display text-xl text-charcoal-800 mb-3 uppercase tracking-wide">Подологія & Педикюр</h4>
+                <p class="font-light text-charcoal-500 text-sm leading-relaxed">Естетичний педикюр та професійне вирішення складних проблем стоп.</p>
+            </div>
+            <div class="gsap-card bg-white p-10 hover:shadow-lg transition-shadow duration-300 rounded-sm">
+                <h4 class="font-display text-xl text-charcoal-800 mb-3 uppercase tracking-wide">Брови</h4>
+                <p class="font-light text-charcoal-500 text-sm leading-relaxed">Ламінування, побудова ідеальної архітектури та стійке фарбування.</p>
+            </div>
+            <div class="gsap-card bg-white p-10 hover:shadow-lg transition-shadow duration-300 rounded-sm">
+                <h4 class="font-display text-xl text-charcoal-800 mb-3 uppercase tracking-wide">Депіляція</h4>
+                <p class="font-light text-charcoal-500 text-sm leading-relaxed">Максимально комфортне видалення волосся преміальними матеріалами.</p>
+            </div>
+        </div>
+    </section>
+
+<section id="price" class="py-24 px-6 max-w-4xl mx-auto">
+        <div class="text-center mb-16 gsap-reveal-up">
+            <h3 class="font-display font-light text-3xl md:text-4xl text-charcoal-900 mb-3 uppercase tracking-wide">Прайс</h3>
+            <div class="w-12 h-px bg-powder-dark mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+            <div class="gsap-reveal-up">
+                <h4 class="font-display text-lg text-charcoal-800 mb-6 uppercase tracking-widest border-b border-powder-dark pb-2">Манікюр</h4>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-end">
+                        <span class="font-light text-charcoal-800">Гігієнічний манікюр</span>
+                        <span class="font-display font-medium text-charcoal-900">400 ₴</span>
+                    </div>
+                    <div class="flex justify-between items-end">
+                        <span class="font-light text-charcoal-800">Комплекс (зняття + манікюр + покриття)</span>
+                        <span class="font-display font-medium text-charcoal-900">800 ₴</span>
+                    </div>
+                    <div class="flex justify-between items-end">
+                        <span class="font-light text-charcoal-800">Нарощування нігтів (комплекс)</span>
+                        <span class="font-display font-medium text-charcoal-900">1200 ₴</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gsap-reveal-up">
+                <h4 class="font-display text-lg text-charcoal-800 mb-6 uppercase tracking-widest border-b border-powder-dark pb-2">Брови & Депіляція</h4>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-end">
+                        <span class="font-light text-charcoal-800">Комплекс (корекція + фарбування)</span>
+                        <span class="font-display font-medium text-charcoal-900">500 ₴</span>
+                    </div>
+                    <div class="flex justify-between items-end">
+                        <span class="font-light text-charcoal-800">Ламінування брів (комплекс)</span>
+                        <span class="font-display font-medium text-charcoal-900">700 ₴</span>
+                    </div>
+                    <div class="flex justify-between items-end">
+                        <span class="font-light text-charcoal-800">Депіляція (від...)</span>
+                        <span class="font-display font-medium text-charcoal-900">200 ₴</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 px-4 md:px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16 gsap-reveal-up">
+            <h3 class="font-display font-light text-3xl md:text-4xl text-charcoal-900 mb-3 uppercase tracking-wide">Портфоліо</h3>
+            <div class="w-12 h-px bg-powder-dark mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
+            <div class="overflow-hidden rounded-sm group gsap-reveal-up">
+                <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=800&q=80" alt="Робота 1" class="w-full h-48 md:h-72 object-cover transition duration-700 group-hover:scale-110">
+            </div>
+            <div class="overflow-hidden rounded-sm group gsap-reveal-up">
+                <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=80" alt="Робота 2" class="w-full h-48 md:h-72 object-cover transition duration-700 group-hover:scale-110">
+            </div>
+            <div class="overflow-hidden rounded-sm group gsap-reveal-up">
+                <img src="https://images.pexels.com/photos/1029896/pexels-photo-1029896.jpeg" alt="Робота 3" class="w-full h-48 md:h-72 object-cover transition duration-700 group-hover:scale-110">
+            </div>
+            <div class="overflow-hidden rounded-sm group gsap-reveal-up">
+                <img src="2.jpg" alt="Робота 4" class="w-full h-48 md:h-72 object-cover transition duration-700 group-hover:scale-110">
+            </div>
+        </div>
+        
+        <div class="text-center mt-10 gsap-reveal-up">
+            <a href="https://instagram.com/lilynails.kiev" target="_blank" class="inline-block border-b border-charcoal-800 text-charcoal-800 pb-1 uppercase tracking-widest text-xs transition hover:text-charcoal-500 hover:border-charcoal-500">
+                Більше робіт в Instagram
+            </a>
+        </div>
+    </section>
+
+    <section class="bg-white py-24 px-6 border-y border-powder-base mt-10">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 gsap-reveal-up">
+                <h3 class="font-display font-light text-3xl md:text-4xl text-charcoal-900 mb-3 uppercase tracking-wide">Клієнти кажуть</h3>
+                <div class="w-12 h-px bg-powder-dark mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center divide-y md:divide-y-0 md:divide-x divide-powder-base">
+                <div class="px-6 py-4 gsap-reveal-up">
+                    <i class="fa-solid fa-quote-left text-powder-dark text-3xl mb-4 opacity-50"></i>
+                    <p class="font-light text-charcoal-500 text-sm leading-relaxed mb-6 italic">"Ідеальний манікюр! Юля дійсно береже час, впоралися рівно за півтори години, а відблиски просто космічні. Тримається вже 4 тижні без жодних сколів."</p>
+                    <span class="font-display font-medium text-charcoal-800 uppercase text-xs tracking-widest">Олена</span>
+                </div>
+                <div class="px-6 py-4 gsap-reveal-up">
+                    <i class="fa-solid fa-quote-left text-powder-dark text-3xl mb-4 opacity-50"></i>
+                    <p class="font-light text-charcoal-500 text-sm leading-relaxed mb-6 italic">"Робила ламінування брів перед відпусткою. Форма підібрана ідеально до мого обличчя, виглядає дуже натурально і доглянуто. Дякую!"</p>
+                    <span class="font-display font-medium text-charcoal-800 uppercase text-xs tracking-widest">Катерина</span>
+                </div>
+                <div class="px-6 py-4 gsap-reveal-up">
+                    <i class="fa-solid fa-quote-left text-powder-dark text-3xl mb-4 opacity-50"></i>
+                    <p class="font-light text-charcoal-500 text-sm leading-relaxed mb-6 italic">"Дуже затишний кабінет і 100% відчуття безпеки. Інструменти відкриваються при мені, все стерильно. Тепер я ваш постійний клієнт."</p>
+                    <span class="font-display font-medium text-charcoal-800 uppercase text-xs tracking-widest">Марія</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="bg-powder-base py-24 px-6">
+    <div class="max-w-3xl mx-auto text-center gsap-reveal-up">
+        <h3 class="font-display font-light text-3xl text-charcoal-900 mb-6 uppercase tracking-wide">Зв'язок та Локація</h3>
+        <p class="font-light text-charcoal-800 mb-2">м. Київ, вул. Ялтинська, 15 (Дарниця)</p>
+        <p class="font-medium text-charcoal-900 mb-10 text-lg tracking-widest">063 154 55 50</p>
+        
+        <div class="flex flex-wrap justify-center gap-4 mb-16">
+            <a href="https://instagram.com/lilynails.kiev" target="_blank" class="flex items-center justify-center gap-3 bg-white text-charcoal-800 px-8 py-4 uppercase tracking-widest text-xs transition hover:shadow-md rounded-sm">
+                <i class="fa-brands fa-instagram text-lg"></i> Instagram
+            </a>
+            <a href="https://t.me/lily17061991" target="_blank" class="flex items-center justify-center gap-3 bg-white text-charcoal-800 px-8 py-4 uppercase tracking-widest text-xs transition hover:shadow-md rounded-sm">
+                <i class="fa-brands fa-telegram text-lg"></i> Telegram
+            </a>
+            <a href="viber://chat?number=%2B380631545550" class="flex items-center justify-center gap-3 bg-white text-charcoal-800 px-8 py-4 uppercase tracking-widest text-xs transition hover:shadow-md rounded-sm">
+                <i class="fa-brands fa-viber text-lg"></i> Viber
+            </a>
+        </div>
+
+        <div class="w-full h-64 bg-white flex items-center justify-center text-charcoal-500 text-sm rounded-sm shadow-inner">
+            *Тут буде карта Google*
+        </div>
+    </div>
+</section>
+
+    <footer class="py-8 text-center text-[10px] tracking-[0.2em] uppercase text-charcoal-500 bg-white border-t border-powder-light">
+        &copy; 2026 YULIIA RAPACH. Усі права захищено.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+        // 1. Плавний скролінг Lenis
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // М'яка еластичність
+            direction: 'vertical',
+            gestureDirection: 'vertical',
+            smooth: true,
+            mouseMultiplier: 1,
+            smoothTouch: false, // На телефонах залишаємо рідний скрол для зручності
+            touchMultiplier: 2,
+            infinite: false,
+        })
+
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+        requestAnimationFrame(raf)
+
+        // Підключаємо GSAP до Lenis
+        gsap.registerPlugin(ScrollTrigger);
+        lenis.on('scroll', ScrollTrigger.update);
+        gsap.ticker.add((time)=>{ lenis.raf(time * 1000) });
+        gsap.ticker.lagSmoothing(0);
+
+        // 2. Анімація головного екрана при завантаженні (Hero)
+        gsap.set(".gsap-hero-elem", { y: 30, opacity: 0, visibility: "visible" });
+        gsap.to(".gsap-hero-elem", { 
+            y: 0, 
+            opacity: 1, 
+            duration: 1, 
+            stagger: 0.15, // Елементи з'являються по черзі
+            ease: "power3.out",
+            delay: 0.2
+        });
+
+        // Анімація фотографії (легкий зум і проявлення)
+        gsap.set(".gsap-photo-wrapper", { opacity: 0, y: 50, visibility: "visible" });
+        gsap.to(".gsap-photo-wrapper", { opacity: 1, y: 0, duration: 1.5, ease: "power3.out", delay: 0.5 });
+        gsap.to(".gsap-photo-img", { scale: 1, duration: 2, ease: "power2.out", delay: 0.5 });
+
+        // 3. Анімація появи елементів при скролінгу вниз
+        gsap.utils.toArray('.gsap-reveal-up').forEach(elem => {
+            gsap.from(elem, {
+                scrollTrigger: {
+                    trigger: elem,
+                    start: "top 85%", // Анімація починається, коли елемент доходить до 85% екрану
+                },
+                y: 50,
+                opacity: 0,
+                duration: 0.8,
+                ease: "power3.out"
+            });
+        });
+
+        // Анімація карток послуг (з'являються по черзі)
+        gsap.from('.gsap-card', {
+            scrollTrigger: {
+                trigger: "#services",
+                start: "top 75%",
+            },
+            y: 50,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.15, // Кожна наступна картка запізнюється на 0.15 сек
+            ease: "power3.out"
+        });
+    </script>
+</body>
+</html>
