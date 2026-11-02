@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rozt1k.github.io/yuliia-beauty/sitemap.xml

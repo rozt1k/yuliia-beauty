@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-padding-top: 6rem; scroll-behavior: smooth; }
+
+/* Початковий стан анімацій — лише коли JS працює (клас .js ставиться на <html>) */
+.js .gsap-hero-elem { opacity: 0; }
+
+:focus-visible { outline: 2px solid #333333; outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .js .gsap-hero-elem { opacity: 1; }
+  * { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
